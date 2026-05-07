@@ -1,22 +1,26 @@
-import React from 'react'
-import {Route,Routes } from 'react-router'
-import Signup  from "./components/Signup"
-import DisplayAll from "./components/DisplayAll"
-import DisplayCompleted from "./components/DisplayCompleted"
+// App.jsx
+
+import { Routes, Route } from "react-router-dom";
+import Fruits from "./pages/Fruits";
+import Vegetables from "./pages/Vegitables";
+import Dairy from "./pages/Dairy";
+import Cart from "./pages/Cart";
+import Navbar from "./components/Navbar";
+import { CartProvider } from "./context/CardContext";
+
 function App() {
   return (
-
-    
-        <Routes>
-            <Route path="/" element={<Signup/>}/>
-            <Route path="/displayall" element={<DisplayAll/>}/>
-            <Route path="displaycompleted" element={<DisplayCompleted/>}/>
-        </Routes>
-
-        
-    
-    
-  )
+    <CartProvider>
+      <Navbar />   {/* ✅ here */}
+      
+      <Routes>
+        <Route path="/" element={<Fruits />} />
+        <Route path="/vegetables" element={<Vegetables />} />
+        <Route path="/dairy" element={<Dairy />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </CartProvider>
+  );
 }
 
-export default App
+export default App;

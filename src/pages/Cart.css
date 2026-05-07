@@ -1,0 +1,36 @@
+/* Cart.css */
+
+.cart-container {
+  padding: 20px;
+}
+
+.cart-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background: #2e7d32;
+}

@@ -74,3 +74,30 @@ tr:nth-child(even) {
 .back-btn:hover {
   background-color: #1e7e34;
 }
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+   padding: 10px 20px;
+  background-color: #e06666;
+  color: white;
+  
+}
+
+.nav-links{
+  display : flex;
+  gap: 20px;
+  list-style: none;
+  
+}
+
+
+.nav-links a{
+  color: white;
+  text-decoration: underline dotted;
+}
+
+
+

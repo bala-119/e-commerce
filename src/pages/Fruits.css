@@ -1,0 +1,19 @@
+/* Page container */
+.container {
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
